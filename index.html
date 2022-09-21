@@ -55,7 +55,7 @@
           <p><textarea name="entry.1396852944" placeholder="コメント" rows="10" cols="40" maxlength="400" id="wcheck" required style="width: 600px; min-height: 200"></textarea></p>
           <input type="submit" id="submitbutton" value="送信">
           </form>
-          <iframe onload='if(submitted){window.location="";}' id=hidden_iframe name=hidden_iframe style=display:none></iframe>
+          <iframe onload='if(submitted){window.location="";}window.location.reload();' id=hidden_iframe name=hidden_iframe style=display:none></iframe>
           <script type="text/javascript">
           	document.getElementById("submitbutton").disabled = true;
           	textareas = document.getElementsByTagName('textarea');
@@ -67,7 +67,7 @@
           		inputs[i].value = inputs[i].value.replace( /</g ,'&lt;' );
           	}
           	return submitted=!0;
-            window.location.reload();
+            
           }
           </script>
         </div>
