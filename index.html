@@ -39,6 +39,7 @@
           <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
           <div id="comments" class="comments"></div><br>
           <script>
+          /*
           d3.csv("https://docs.google.com/spreadsheets/d/1umh7awh2siANPXTgLp4ErDsGWkDNruSKFeEHR3AHKqw/export?format=csv&range=A3:D", function(error, data){
             var text = "";
               for(var i=0; i<data.length; i++){
@@ -48,6 +49,7 @@
               }
             d3.select("#comments").html(text);
           });
+          */
           </script>
           <form action="https://docs.google.com/forms/d/e/1FAIpQLSclFXLz40mu18UtjDRdJX1DXDxbcYypZbUqHya31MXwNkiRVA/formResponse" target="hidden_iframe" method="post" onsubmit="return test(this.wcheck.value)">
           <p><input name="entry.502151223" placeholder="名前" minlength="4" maxlength="16" required></p>
@@ -58,14 +60,7 @@
           <input type="submit" id="submitbutton" value="送信">
           </form>
           <iframe onload='if(submitted){window.location="";}' id=hidden_iframe name=hidden_iframe style=display:none></iframe>
-          <script type="text/javascript" src="1.js">
-          var NGComments = ["死ね","高橋","バカ",".exe","takahashi","takahasi","たかはし","sine","shine","しね"]; // 簡易的なNGワードの設定
-          var regex = new RegExp(NGComments.join("|"));
-          function test(wcheck) {
-          	if (wcheck.match(regex) != null) {
-          		alert("ERROR: コメントにNGワードが含まれています");
-          		return false;
-          	}
+          <script type="text/javascript">
           	document.getElementById("submitbutton").disabled = true;
           	textareas = document.getElementsByTagName('textarea');
           	for(var i=0 ;i < textareas.length ;i ++ ){
@@ -76,6 +71,7 @@
           		inputs[i].value = inputs[i].value.replace( /</g ,'&lt;' );
           	}
           	return submitted=!0;
+            window.location.reload();
           }
           </script>
         </div>
