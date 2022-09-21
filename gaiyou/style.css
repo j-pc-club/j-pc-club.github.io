@@ -67,17 +67,12 @@ header nav ul li a {
     margin-bottom: 70px;
     text-align: center;
 }
-.NO-line a{
-    text-decoration: auto;
-    color: auto;
-    display: auto;
-}
 .NO-line a::after {
     content: "";
-    display: block;
+    display: auto;
     width: 0px;
-    background-color: black;
-    height: 1px;
+    background-color: auto;
+    height: auto;
     margin: 0 auto;
 }
 .ht{
