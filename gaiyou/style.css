@@ -68,7 +68,17 @@ header nav ul li a {
     text-align: center;
 }
 .NO-line a{
-    text:auto;
+    text-decoration: auto;
+    color: auto;
+    display: auto;
+}
+.NO-line a::after {
+    content: "";
+    display: block;
+    width: 0px;
+    background-color: black;
+    height: 1px;
+    margin: 0 auto;
 }
 .ht{
   justify-content: space-around;
