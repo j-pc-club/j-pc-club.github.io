@@ -68,7 +68,7 @@ header nav ul li a {
     text-align: center;
 }
 .NO-line {
-    font-color:blue;
+    font-color:color: RGB(0,0,255);;
 }
 .NO-line a::after {
     content: "";
