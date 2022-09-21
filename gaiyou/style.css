@@ -67,9 +67,7 @@ header nav ul li a {
     margin-bottom: 70px;
     text-align: center;
 }
-.NO-line {
-    font-color:color: RGB(0,0,255);;
-}
+
 .NO-line a::after {
     content: "";
     display: auto;
@@ -284,4 +282,7 @@ html, body {
 .comments h4{
   padding-left: 20px;
 
+}
+.NO-line {
+    font-color:color: RGB(0,0,255);;
 }
