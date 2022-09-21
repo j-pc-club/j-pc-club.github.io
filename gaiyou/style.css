@@ -67,6 +67,9 @@ header nav ul li a {
     margin-bottom: 70px;
     text-align: center;
 }
+.NO-line a{
+    text:auto;
+}
 .ht{
   justify-content: space-around;
 }
